@@ -11,7 +11,9 @@ body{
 nav{
    font-family: 'Ubantu',sans-serif; 
 }
-
+.container{
+    min-height: 75vh;
+}
 nav ul{
     display: flex;
     align-items: center;
@@ -31,4 +33,25 @@ nav li{
 }
 .brand img{
     padding: 0 8px;
+}
+
+.bottom{
+    position: sticky;
+    height: 120px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
 }
