@@ -11,9 +11,25 @@ body{
 nav{
    font-family: 'Ubantu',sans-serif; 
 }
-.container{
-    min-height: 75vh;
+.container {
+  min-height: 62vh;
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  width: 70%;
+  margin: 23px auto;
+  border-radius: 12px;
+  padding: 34px;
+  /* background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4'); */
+    background-image: url("/assets/bg.jpg");
+
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }
+
+
 nav ul{
     display: flex;
     align-items: center;
@@ -55,3 +71,4 @@ nav li{
 #myProgressBar{
     width: 80vw;
 }
+
