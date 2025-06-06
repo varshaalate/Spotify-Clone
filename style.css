@@ -70,6 +70,7 @@ nav li{
 }
 #myProgressBar{
     width: 80vw;
+    cursor: pointer;
 }
 
 .songItem{
@@ -99,4 +100,15 @@ nav li{
 
 .songItemContainer{
     margin-top: 70px;
+}
+
+.songInfo{
+    position: absolute;
+    left: 9vw;
+   font-family: 'Ubantu',sans-serif; 
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
