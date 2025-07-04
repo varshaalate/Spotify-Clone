@@ -30,6 +30,7 @@ masterPlay.addEventListener('click',()=>{
         
     }
     else{
+        audioElement.pause()
          masterPlay.classList.remove('fa-circle-pause');
         masterPlay.classList.add('fa-circle-play');
         gif.style.opacity = 0;
@@ -38,8 +39,12 @@ masterPlay.addEventListener('click',()=>{
 
 
 //LIsten To events
-myProgressBar.addEventListener('timeupdate',()=>{
+audioElement.addEventListener('timeupdate',()=>{
     console.log("Time Update");
-
     // Update Seekbar
+
+    progress = parseInt((audioElement.currentTime/audioElement.duration)*100)
+    console.log(progress)
+    myProgressBar.value = progress;
+
 });
